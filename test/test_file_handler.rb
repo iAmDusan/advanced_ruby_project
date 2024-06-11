@@ -8,7 +8,7 @@ class TestFileHandler < Minitest::Test
 
   def test_read_file
     content = FileHandler.read_file('data/input.txt')
-    assert_match /sample input file/, content
+    assert_match(/sample input file/, content)  # Added parentheses to avoid ambiguity
   end
 
   def test_write_file
